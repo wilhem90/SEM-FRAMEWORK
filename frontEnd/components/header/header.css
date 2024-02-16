@@ -1,0 +1,64 @@
+.boxHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #007F35;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.isConect {
+    /* display: none; */
+}
+
+
+.boxHeader .logo {
+    flex: 1;
+    margin-left: 30px;
+}
+
+
+.boxHeader .logo img {
+    width: 150px;
+    height: 100%;
+}
+
+.boxHeader .btnsLinks {
+    flex: 3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.boxHeader .btnsLinks li {
+    list-style: none;
+    margin: 0 10px;
+    width: 150px;
+    color: white;
+}
+
+.boxHeader .btnsLinks li a {
+    background-color: #007F35;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.boxHeader .btnsLinks li a:hover {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #007F35;
+    color: #000000;
+    box-shadow: 1px 2px 20px #00000066;
+}
+

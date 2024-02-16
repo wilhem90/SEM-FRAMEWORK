@@ -1,54 +1,138 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
-    font-family: monospace;
 }
 
 body {
-    background-image: url("/frontEnd/images/aprenderProgramar.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
-    justify-content: space-between;
-    /* position: relative; */
-    height: 100%;
-    background-attachment: fixed;
+    background-color: #F0F2F5;
 }
 
 main {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    /* height: 100vh; */
+    flex-direction: row;
+    margin-top: 100px;
+    height: 600px;
+    overflow: hidden;
 }
 
-.centerBox {
+.shareYouridea {
+    padding: 20px;
+    text-align: center;
+    margin: 20px 10px;
+    width: 500px;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.shareYouridea input {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.shareYouridea button {
+    margin-left: 20px;
+    width: 20%;
+    font-weight: bold;
+    background-color: green;
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.shareYouridea button:hover {
+    background-color: rgba(0, 128, 0, 0.315);
+    color: black;
+}
+
+.boxSection {
+    padding: 20px;
+    text-align: center;
+    margin: 20px 10px;
+    width: 500px;
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.boxSection .boxInput {
+    background-color: rgba(194, 194, 194, 0.457);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.boxSection .boxReaction {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
     width: 100%;
 }
 
-.box-header {
-    background-color: #ffffffd4;
-    height: 100px;
+.boxUser {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    z-index: 999;
-    position: fixed;
+    align-items: center;
+    justify-content: stretch;
+    margin: 0px 0 20px;
+}
+
+.boxSection img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.boxSection input {
+    padding: 10px;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 
-.box-content {
-    top: 100px;
-    background-color: rgb(255, 255, 0);
-    border-top: 2px solid brown;
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 30px;
+
+
+
+.boxSidebar {
+    margin: 20px 5px;
+    flex: 1;
+    height: 100%;
 }
 
-.box-footer {
-    background-color: rgb(194, 129, 68);
-    height: 680px;
-    position: relative;
+.boxPrincipal {
+    overflow: auto;
+    flex: 6;
+    height: 100%;
+    margin-left: 10px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
