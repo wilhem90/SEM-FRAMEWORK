@@ -1,138 +1,49 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     box-sizing: border-box;
 }
 
 body {
-    width: 100%;
     display: flex;
-    overflow: hidden;
     flex-direction: column;
-    background-color: #F0F2F5;
+    justify-content: space-around;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #FFFFFF;
 }
 
-main {
+
+.boxHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(169, 169, 169);
+    overflow: hidden;
+
+}
+
+.boxMain {
+    top: 100px;
+    /* margin-top: 100px; */
+    height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    height: 600px;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    position: relative;
 }
 
-.shareYouridea {
-    padding: 20px;
-    text-align: center;
-    margin: 20px 10px;
-    width: 500px;
-    height: 500px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    justify-content: space-between;
-}
-
-.shareYouridea input {
-    padding: 15px;
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    background-color: lightgray;
-}
-
-.shareYouridea button {
-    margin-left: 20px;
-    width: 20%;
-    font-weight: bold;
+/* .boxFooter {
     background-color: green;
-    outline: none;
-    color: white;
-    border: none;
-    border-radius: 10px;
-}
-
-.shareYouridea button:hover {
-    background-color: rgba(0, 128, 0, 0.315);
-    color: black;
-}
-
-.boxSection {
-    padding: 20px;
-    text-align: center;
-    margin: 20px 10px;
-    width: 500px;
-    height: 500px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-.boxSection .boxInput {
-    background-color: rgba(194, 194, 194, 0.457);
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    overflow: hidden;
     width: 100%;
-    margin-left: 10px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    margin-top: 10px;
-}
-
-.boxSection .boxReaction {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    width: 100%;
-}
-
-.boxUser {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: stretch;
-    margin: 0px 0 20px;
-}
-
-.boxSection img {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-}
-
-.boxSection input {
-    padding: 10px;
-    width: 80%;
-    background-color: transparent;
-    outline: none;
-    border: none;
-}
-
-
-
-
-
-.boxSidebar {
-    margin: 20px 5px;
-    flex: 1;
-    height: 100%;
-}
-
-.boxPrincipal {
-    overflow: auto;
-    flex: 6;
-    height: 100%;
-    margin-left: 10px;
-    scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    height: 30%;
+}  */

@@ -1,64 +1,42 @@
-.boxHeader {
+.logo {
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.logo .imgLogo {
+    width: 150px;
+    height: 80px;
+}
+
+.btnsLinks ul {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #007F35;
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    overflow: hidden;
+    margin-right: 50px;
 }
 
-.isConect {
-    /* display: none; */
+.btnsLinks ul li {
+    margin: 0 12px;
+    width: 100px;
 }
 
-
-.boxHeader .logo {
-    flex: 1;
-    margin-left: 30px;
-}
-
-
-.boxHeader .logo img {
-    width: 150px;
-    height: 100%;
-}
-
-.boxHeader .btnsLinks {
-    flex: 3;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-right: 40px;
-}
-
-.boxHeader .btnsLinks li {
-    list-style: none;
-    margin: 0 10px;
-    width: 150px;
-    color: white;
-}
-
-.boxHeader .btnsLinks li a {
+.btnsLinks ul li a {
+    border-radius: 3px;
+    padding: 8px 0px;
     background-color: #007F35;
-    padding: 10px 30px;
     color: white;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: .5s ease;
 }
 
-.boxHeader .btnsLinks li a:hover {
-    border-radius: 5px;
+
+.btnsLinks ul li a:hover {
     background-color: transparent;
-    border: 1px solid #007F35;
-    color: #000000;
-    box-shadow: 1px 2px 20px #00000066;
+    border: 1px solid lightgray;
+    color: black;
 }
-
